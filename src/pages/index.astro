@@ -1,26 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Button from "../components/Button.astro";
+import HeroButton from "../components/HeroButton.astro";
 ---
 
 <Layout title="JT Muse">
-  <div class="content">
-    <div class="hero">
-      <img class="logo" src="logo.png" />
-      <h2 class="subtitle-gradient">lgs jt's flagship arts olympiad</h2>
-    </div>
+  <div class="flex items-center justify-center flex-col">
+    <img class="logo" src="logo.png" />
+    <h2 class="subtitle-gradient">lgs jt's flagship arts olympiad</h2>
+    <HeroButton title="register now" , href="https://google.com" />
   </div>
 </Layout>
 
 <style>
-  .content {
-    margin: auto;
-    width: 100%;
-
-    font-size: 20px;
-    line-height: 1.4;
-  }
-
   h2 {
     font-size: 2rem;
     font-weight: 700;

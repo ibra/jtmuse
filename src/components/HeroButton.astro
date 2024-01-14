@@ -7,21 +7,23 @@ interface Props {
 const { title, href } = Astro.props;
 ---
 
-<div>
-  <a class="stylizedbutton" href=`${{ href }}`>
-    <p>{{ title }}</p>
-  </a>
-</div>
+<a
+  href="https://google.com"
+  class="bg-yellow-300 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center"
+>
+  {title}
+</a>
 
 <style>
-  .stylizedbutton {
+  .stylizedButton {
     list-style: none;
-    display: flex;
+    list-style-type: none;
     padding: 5px;
 
+    text-align: center;
+
+    width: 15%;
     background-color: #23262d;
-    background-image: none;
-    background-size: 400%;
     border-radius: 4px;
     background-position: 100%;
 
