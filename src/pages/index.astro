@@ -4,31 +4,16 @@ import HeroButton from "../components/HeroButton.astro";
 ---
 
 <Layout title="JT Muse">
-  <div class="flex items-center justify-center flex-col">
-    <img class="logo" src="logo.png" />
-    <h2 class="subtitle-gradient">lgs jt's flagship arts olympiad</h2>
-    <HeroButton title="register now" , href="https://google.com" />
+  <div class="flex items-center justify-center h-screen">
+    <div class="flex items-center justify-center flex-col">
+      <h2 class="subtitle-gradient pt-2 text-3xl">LGS JT presents</h2>
+      <img class="logo mb-5" src="muse_500px.png" alt="muse logo" />
+      <HeroButton title="register now" , href="https://google.com" />
+    </div>
   </div>
 </Layout>
 
 <style>
-  h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 1em;
-  }
-
-  .logo {
-    display: block;
-    margin: auto;
-    padding-top: 2em;
-
-    width: 350px;
-    height: auto;
-  }
-
   .subtitle-gradient {
     background-image: var(--secondary-gradient);
     -webkit-background-clip: text;
