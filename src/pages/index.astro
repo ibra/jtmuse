@@ -1,14 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import HeroButton from "../components/HeroButton.astro";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <Layout title="JT Muse">
   <div class="flex items-center justify-center h-screen">
     <div class="flex items-center justify-center flex-col">
-      <h2 class="subtitle-gradient pt-2 text-3xl">LGS JT presents</h2>
-      <img class="logo mb-5" src="muse_500px.png" alt="muse logo" />
-      <HeroButton title="register now" , href="https://google.com" />
+      <h2 class="subtitle-gradient font-bold pt-2 text-3xl animate-stagger">
+        LGS JT presents
+      </h2>
+      <img
+        class="logo mb-5 animate-stagger"
+        src="muse_500px.png"
+        alt="muse logo"
+      />
+
+      <Navbar />
     </div>
   </div>
 </Layout>
