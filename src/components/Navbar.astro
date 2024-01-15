@@ -1,24 +1,43 @@
 ---
-interface Props {
-  current: string;
-}
-
-const current = Astro.props;
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
 ---
 
-<nav class="bg-blue-600 p-2 px-10 rounded-3xl mx-auto mt-5 max-w-2xl">
+<nav
+  class="bg-blue-600 p-2 px-20 rounded-3xl mx-auto mt-5 max-w-2xl text-gray-300"
+>
   <div class="flex justify-center items-center text-2xl">
     <div class="flex items-center space-x-2 font-bold">
-      <a href="/" class="text-white">home</a>
-      <span class="text-gray-300">•</span>
-      <a href="/categories" class="text-gray-300 hover:text-white">info</a>
-      <span class="text-gray-300">•</span>
-      <a href="/categories" class="text-gray-300 hover:text-white">categories</a
+      <a href="/" class=`${currentPath === "" ? "text-white" : ""}`>home</a>
+
+      <span>•</span>
+
+      <a href="/info" class=`${currentPath === "info" ? "text-white" : ""}`
+        >info</a
       >
-      <span class="text-gray-300">•</span>
-      <a href="https://forms.google.com" class="text-gray-300 hover:text-white"
-        >register</a
+
+      <span>•</span>
+
+      <a
+        href="/categories"
+        class=`${currentPath === "categories" ? "text-white" : ""}`
+        >categories</a
+      >
+
+      <span>•</span>
+
+      <a
+        href="https://forms.google.com"
+        class=`${currentPath === "categories" ? "text-white" : ""}`
+      >
+        register</a
       >
     </div>
   </div>
 </nav>
+
+<style>
+  .active {
+    @apply text-white;
+  }
+</style>

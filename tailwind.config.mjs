@@ -3,9 +3,9 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
-      animation: { stagger: "enter .6s both" },
+      animation: { stagger: "enterUp .6s both" },
       keyframes: {
-        enter: {
+        enterUp: {
           "0%": { opacity: 0, transform: "translateY(15px)" },
           "100%": { opacity: 1, transform: "none" },
         },
