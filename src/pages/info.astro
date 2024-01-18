@@ -3,14 +3,18 @@ import Card from "../components/Card.astro";
 import CardText from "../components/CardText.astro";
 import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
+import ContactSlot from "../components/ContactSlot.astro";
+
+import { Image } from "astro:assets";
+import logo from "../assets/muse_full.webp";
 ---
 
 <Layout title="info">
   <Navbar />
-  <img
-    class="logo mb-5 p-10 animate-stagger mx-auto"
-    src="muse_500px.png"
+  <Image
+    src={logo}
     alt="muse logo"
+    class="mb-5 p-10 animate-stagger mx-auto max-w-2xl"
   />
   <CardText
     title="what is muse?"
@@ -24,4 +28,32 @@ import Layout from "../layouts/Layout.astro";
   outlets of artistic expression: Art, Literature,
   Drama, Media, and Music.`
   />
+  <Card>
+    <h2 class="text-white text-center text-3xl font-bold p-3">teaser video</h2>
+    <div
+      style="position:relative; width:100%; height:0px; padding-bottom:56.250%"
+    >
+      <iframe
+        allow="fullscreen"
+        title="teaser video"
+        allowfullscreen
+        height="100%"
+        src="https://streamable.com/e/4xbuih?"
+        width="100%"
+        style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"
+      ></iframe>
+    </div>
+  </Card>
+  <Card>
+    <h2 class="text-white text-center text-3xl font-bold p-3">
+      event organisers
+    </h2>
+    <div class="grid grid-cols-2 gap-4">
+      <ContactSlot title="Shirjeel Ahmad" phone="+92 336 0455056" />
+      <ContactSlot title="Qasim Hasnain Kazmi" phone="+92 301 9059055" />
+      <div class="col-span-3 items-center justify-center flex">
+        <ContactSlot title="Saad Ahmed" phone="+92 310 8857777" />
+      </div>
+    </div>
+  </Card>
 </Layout>

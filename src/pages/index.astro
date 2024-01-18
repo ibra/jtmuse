@@ -1,6 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
+
+import { Image } from "astro:assets";
+import logo from "../assets/muse_full.webp";
 ---
 
 <Layout title="home">
@@ -9,12 +12,11 @@ import Navbar from "../components/Navbar.astro";
       <h2 class="subtitle-gradient font-bold pt-2 text-3xl animate-stagger">
         LGS JT presents
       </h2>
-      <img
-        class="logo mb-5 animate-stagger"
-        src="muse_500px.png"
+      <Image
+        src={logo}
         alt="muse logo"
+        class="mb-5 animate-stagger max-w-3xl"
       />
-
       <Navbar />
     </div>
   </div>
