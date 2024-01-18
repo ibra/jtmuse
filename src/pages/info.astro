@@ -1,4 +1,6 @@
 ---
+import Card from "../components/Card.astro";
+import CardText from "../components/CardText.astro";
 import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -9,5 +11,17 @@ import Layout from "../layouts/Layout.astro";
     class="logo mb-5 p-10 animate-stagger mx-auto"
     src="muse_500px.png"
     alt="muse logo"
+  />
+  <CardText
+    title="what is muse?"
+    description=`Managed by the Arts Council of the senior A2
+  batch of LGS Johar Town, JT Muse '24 is the
+  first edition to JT's newest addition to its
+  unparalleled lineup of events in the local circuit.
+  Years in planning, JT Muse is an Arts Olympiad
+  showcasing art at its most refined form, with a
+  plethora of subevents focusing on various
+  outlets of artistic expression: Art, Literature,
+  Drama, Media, and Music.`
   />
 </Layout>
