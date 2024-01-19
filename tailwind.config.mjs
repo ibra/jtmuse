@@ -10,6 +10,9 @@ export default {
           "100%": { opacity: 1, transform: "none" },
         },
       },
+      transitionProperty: {
+        height: "height",
+      },
     },
   },
   plugins: [],
