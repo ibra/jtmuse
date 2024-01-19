@@ -5,25 +5,21 @@ import Layout from "../layouts/Layout.astro";
 
 import { Image } from "astro:assets";
 import logo from "../assets/muse_full.webp";
+import HeroButton from "../components/HeroButton.astro";
+import Heading from "../components/Heading.astro";
 ---
 
 <Layout title="registration">
   <Navbar />
-  <div
-    class="flex flex-col items-center justify-center bg-slate-300 m-10 rounded-3xl p-5 duration-300 hover:bg-opacity-80 hover:scale-90"
-  >
-    <h1>Code of Conduct</h1>
-    <div
-      class="absolute hidden mt-2 bg-white border rounded shadow-md transition"
-    >
-      {/* Dropdown items */}
-    </div>
+  <div class="flex flex-col items-center justify-center p-10">
+    <HeroButton title="code of conduct" href="https://google.com" />
   </div>
-  <div class="flex items-center justify-center h-screen">
+  <Heading title="registration form" styling="mb-5  " />
+  <div class="flex items-center justify-center">
     <iframe
       src="https://docs.google.com/forms/d/e/1FAIpQLSc8ZA-LbX4oE9tvBWwof26F2HWLEG5VXf2aMuEGWnSchGUB4Q/viewform?embedded=true"
       width="640"
-      height="959"
+      height="700"
     >
       </Layout>
     </iframe>
