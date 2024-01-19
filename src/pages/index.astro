@@ -4,14 +4,13 @@ import Navbar from "../components/Navbar.astro";
 
 import { Image } from "astro:assets";
 import logo from "../assets/muse_full.webp";
+import Heading from "../components/Heading.astro";
 ---
 
 <Layout title="home">
   <div class="flex items-center justify-center h-screen">
     <div class="flex items-center justify-center flex-col">
-      <h2 class="text-white font-bold pt-2 text-3xl animate-stagger">
-        LGS JT presents
-      </h2>
+      <Heading title="LGS JT presents" />
       <Image
         src={logo}
         alt="muse logo"

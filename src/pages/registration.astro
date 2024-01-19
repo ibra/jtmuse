@@ -1,5 +1,5 @@
 ---
-import Card from "../components/CardText.astro";
+import Card from "../components/TextualCard.astro";
 import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
 
@@ -9,6 +9,16 @@ import logo from "../assets/muse_full.webp";
 
 <Layout title="registration">
   <Navbar />
+  <div
+    class="flex flex-col items-center justify-center bg-slate-300 m-10 rounded-3xl p-5 duration-300 hover:bg-opacity-80 hover:scale-90"
+  >
+    <h1>Code of Conduct</h1>
+    <div
+      class="absolute hidden mt-2 bg-white border rounded shadow-md transition"
+    >
+      {/* Dropdown items */}
+    </div>
+  </div>
   <div class="flex items-center justify-center h-screen">
     <iframe
       src="https://docs.google.com/forms/d/e/1FAIpQLSc8ZA-LbX4oE9tvBWwof26F2HWLEG5VXf2aMuEGWnSchGUB4Q/viewform?embedded=true"

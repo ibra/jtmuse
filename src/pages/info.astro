@@ -1,12 +1,12 @@
 ---
 import Card from "../components/Card.astro";
-import CardText from "../components/CardText.astro";
+import TextualCard from "../components/TextualCard.astro";
 import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
-import ContactSlot from "../components/ContactSlot.astro";
 
 import { Image } from "astro:assets";
 import logo from "../assets/muse_full.webp";
+import Heading from "../components/Heading.astro";
 ---
 
 <Layout title="info">
@@ -16,7 +16,7 @@ import logo from "../assets/muse_full.webp";
     alt="muse logo"
     class="mb-5 p-10 animate-stagger mx-auto max-w-2xl"
   />
-  <CardText
+  <TextualCard
     title="what is muse?"
     description=`Managed by the Arts Council of the senior A2
   batch of LGS Johar Town, Muse '24 is the
@@ -29,9 +29,10 @@ import logo from "../assets/muse_full.webp";
   Drama, Media, and Music.`
   />
   <Card>
-    <h2 class="text-white text-center text-3xl font-bold p-3">teaser video</h2>
+    <Heading title="teaser video" styling="mb-5" />
     <div
       style="position:relative; width:100%; height:0px; padding-bottom:56.250%"
+      class="animate-stagger delay-200"
     >
       <iframe
         allow="fullscreen"

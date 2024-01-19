@@ -1,5 +1,6 @@
 ---
 import Card from "./Card.astro";
+import Heading from "./Heading.astro";
 
 interface Props {
   title: string;
@@ -10,10 +11,10 @@ const { title, description } = Astro.props;
 ---
 
 <Card>
-  <h2 class="text-white text-center text-3xl sm:text-7xl lg:text-3xl font-bold">
-    {title}
-  </h2>
-  <p class="text-white mt-2 text-2xl sm:text-4xl lg:text-2xl p-2 leading-10">
+  <Heading title={title} />
+  <p
+    class="text-white mt-2 text-2xl sm:text-4xl lg:text-2xl p-2 leading-10 delay-200 animate-stagger"
+  >
     {description}
   </p>
 </Card>
