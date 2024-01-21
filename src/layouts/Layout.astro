@@ -9,7 +9,10 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="bg-[url('src/assets/reimagined.png')] bg-cover bg-center"
+>
   <CommonHead
     title={title}
     description="Muse is the first Arts Olympiad in LGS JT's history to be managed by the Senior Arts Council."
@@ -18,30 +21,7 @@ const { title } = Astro.props;
     <slot />
     <style is:global>
       @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-
-      :root {
-        --accent: rgb(204, 155, 70);
-        --accent-light: rgb(237, 202, 144);
-        --accent-dark: 49, 10, 101;
-
-        --secondary: #e3ac5a;
-        --secondary-light: #c79242;
-
-        --accent-gradient: linear-gradient(
-          45deg,
-          var(--accent),
-          var(--accent-light) 30%,
-          white 60%
-        );
-
-        --secondary-gradient: linear-gradient(
-          40deg,
-          var(--secondary),
-          var(--secondary-light) 30%,
-          white 60%
-        );
-      }
-
+      /*
       body {
         background: linear-gradient(45deg, #050c1f, #0d1f4f);
         background-size: 400% 400%;
@@ -60,7 +40,7 @@ const { title } = Astro.props;
           background-position: 0% 50%;
         }
       }
-
+*/
       html {
         font-family: Raleway, sans-serif;
       }
