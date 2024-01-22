@@ -1,4 +1,6 @@
 ---
+import Heading from "./Heading.astro";
+
 interface Props {
   category: string;
 }
@@ -8,8 +10,8 @@ const { category } = Astro.props;
 
 <a href=`/studyguides/${category}.pdf`>
   <img
-    src=`../assets/categories/${category}.jpg`
+    src=`categories/${category}.jpg`
     alt={category}
-    class="w-2xl h-auto rounded-2xl transition duration-150 ease-in-out transform hover:blur"
+    class="w-2xl h-auto rounded-2xl transition duration-150 ease-in-out transform hover:blur-sm md:max-w-64 sm:max-w-32"
   />
 </a>
