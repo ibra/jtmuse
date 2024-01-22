@@ -1,5 +1,4 @@
 ---
-import Card from "../components/TextualCard.astro";
 import CategoryCard from "../components/CategoryCard.astro";
 import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
@@ -12,12 +11,7 @@ import logo from "../assets/muse_full.webp";
   <Navbar />
   <div class="flex h-screen">
     <div class="w-1/4 flex items-center justify-center">
-      <Image
-        src={logo}
-        alt="muse logo"
-        loading="lazy"
-        class="mb-5 animate-stagger mx-auto"
-      />
+      <Image src={logo} alt="muse logo" class="mb-5 animate-stagger mx-auto" />
     </div>
     <div class="w-3/4 grid grid-cols-3 gap-4 p-4 mt-10">
       <div class="col-span-3">
