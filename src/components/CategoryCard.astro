@@ -1,16 +1,15 @@
 ---
 interface Props {
-  href: string;
   category: string;
 }
 
-const { href, category } = Astro.props;
+const { category } = Astro.props;
 ---
 
-<a href={href}>
+<a href=`/studyguides/${category}.pdf`>
   <img
-    src=`assets/categories/${category}.webp`
-    alt="Description"
-    class="w-2xl h-auto rounded-lg transition duration-150 ease-in-out transform hover:blur-md"
+    src=`../assets/categories/${category}.jpg`
+    alt={category}
+    class="w-2xl h-auto rounded-2xl transition duration-150 ease-in-out transform hover:blur"
   />
 </a>

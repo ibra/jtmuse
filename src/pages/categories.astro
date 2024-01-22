@@ -1,21 +1,37 @@
 ---
 import Card from "../components/TextualCard.astro";
+import CategoryCard from "../components/CategoryCard.astro";
 import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
 
 import { Image } from "astro:assets";
 import logo from "../assets/muse_full.webp";
-import Heading from "../components/Heading.astro";
 ---
 
 <Layout title="categoriees">
   <Navbar />
   <div class="flex h-screen">
     <div class="w-1/4 flex items-center justify-center">
-      <Image src={logo} alt="muse logo" class="mb-5 animate-stagger mx-auto" />
+      <Image
+        src={logo}
+        alt="muse logo"
+        loading="lazy"
+        class="mb-5 animate-stagger mx-auto"
+      />
     </div>
-    <div class="w-3/4 flex items-center justify-center">
-      <Heading title="coming soon..." />
+    <div class="w-3/4 grid grid-cols-3 gap-4 p-4">
+      <div class="col-span-3">
+        <CategoryCard category="crescendo" />
+      </div>
+      <div class="col-span-3">Column 2</div>
+      <div class="col-span-3">Column 3</div>
+
+      <!-- Next 5 Rows with 4 columns each -->
+      <div class="col-span-4">Column 1</div>
+      <div class="col-span-4">Column 2</div>
+      <div class="col-span-4">Column 3</div>
+      <div class="col-span-4">Column 4</div>
+      <div class="col-span-4">Column 5</div>
     </div>
   </div>
 </Layout>
