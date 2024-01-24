@@ -7,16 +7,21 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="categoriees">
   <Navbar />
-  <div class="flex h-screen justify-center">
+  <div class="flex justify-center">
     <div
-      class="grid grid-cols-3 gap-5 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 mt-10"
+      class="grid grid-cols-3 gap-5 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 my-10"
     >
-      <CategoryCard category="tune titans" />
+      <!-- music  -->
       <CategoryCard category="crescendo" />
       <CategoryCard category="battle of the bands" />
       <CategoryCard category="originals" />
+      <CategoryCard category="tune titans" />
 
-      <CategoryCard category="crescendo" />
+      <!-- drama  -->
+      <CategoryCard category="rhapsody" />
+      <CategoryCard category="comedy of errors" />
+      <CategoryCard category="metadrama" />
+      <CategoryCard category="improv" />
     </div>
   </div>
 </Layout>
