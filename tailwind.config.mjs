@@ -14,7 +14,7 @@ export default {
         height: "height",
       },
       backgroundImage: {
-        reimagined: "url('/assets/reimagined.png')",
+        reimagined: "url('assets/reimagined.png')",
       },
     },
   },
