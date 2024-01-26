@@ -8,9 +8,9 @@ interface Props {
 const { category } = Astro.props;
 ---
 
-<a href=`categories/${category}`>
+<a href=`/studyguides/${category}.pdf`>
   <Image
-    src={import(`../assets/categories/${category}.jpg`)}
+    src={import(`../assets/subcategories/${category}.jpg`)}
     alt={category}
     class="w-4xl h-auto rounded-2xl transition duration-150 ease-in-out transform hover:blur-sm md:max-w-96 sm:max-w-32 animate-stagger bg-blue-950 text-blue-950"
   />

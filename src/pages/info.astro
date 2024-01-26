@@ -10,16 +10,17 @@ import Heading from "../components/Heading.astro";
 ---
 
 <Layout title="info">
-  <Navbar />
-  <Image
-    src={logo}
-    alt="muse logo"
-    loading="lazy"
-    class="mb-5 p-10 animate-stagger mx-auto max-w-2xl"
-  />
-  <TextualCard
-    title="what is muse?"
-    description=`Managed by the Arts Council of the senior A2
+  <div>
+    <Navbar />
+    <Image
+      src={logo}
+      alt="muse logo"
+      loading="lazy"
+      class="mb-5 p-10 animate-stagger mx-auto max-w-2xl"
+    />
+    <TextualCard
+      title="what is muse?"
+      description=`Managed by the Arts Council of the senior A2
   batch of LGS Johar Town, Muse '24 is the
   first edition to JT's newest addition to its
   unparalleled lineup of events in the local circuit.
@@ -28,27 +29,28 @@ import Heading from "../components/Heading.astro";
   plethora of subevents focusing on various
   outlets of artistic expression: Art, Literature,
   Drama, Media, and Music.`
-  />
-  <Card>
-    <Heading title="teaser video" styling="mb-5" />
-    <div
-      style="position:relative; width:100%; height:0px; padding-bottom:56.250%"
-      class="animate-stagger delay-200"
-    >
-      <iframe
-        allow="fullscreen"
-        title="teaser video"
-        allowfullscreen
-        class="animate-stagger bg-blue-950 rounded-2xl"
-        height="100%"
-        src="https://streamable.com/e/4xbuih?"
-        width="100%"
-        style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"
-      ></iframe>
-    </div>
-  </Card>
+    />
+    <Card>
+      <Heading title="teaser video" styling="mb-5" />
+      <div
+        style="position:relative; width:100%; height:0px; padding-bottom:56.250%"
+        class="animate-stagger delay-200"
+      >
+        <iframe
+          allow="fullscreen"
+          title="teaser video"
+          allowfullscreen
+          class="animate-stagger bg-blue-950 rounded-2xl"
+          height="100%"
+          src="https://streamable.com/e/4xbuih?"
+          width="100%"
+          style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"
+        ></iframe>
+      </div>
+    </Card>
 
-  <h3 class="font-bold text-center text-white text-lg sm:text-2xl md:text-lg">
-    website by ibrahim hisham | © 2024 JT Muse, all rights reserved.
-  </h3>
+    <h3 class="font-bold text-center text-white text-lg sm:text-2xl md:text-lg">
+      website by ibrahim hisham | © 2024 JT Muse, all rights reserved.
+    </h3>
+  </div>
 </Layout>
