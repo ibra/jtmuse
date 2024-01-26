@@ -1,16 +1,13 @@
 ---
-import Card from "../components/Card.astro";
 import CategoryCard from "../components/CategoryCard.astro";
 import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="categoriees">
+<Layout title="categories">
   <Navbar />
   <div class="flex justify-center">
-    <div
-      class="grid grid-cols-3 gap-5 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 my-10"
-    >
+    <div class="grid gap-5 grid-cols-4 my-20 overflow-x-auto">
       <!-- music  -->
       <CategoryCard category="crescendo" />
       <CategoryCard category="battle of the bands" />

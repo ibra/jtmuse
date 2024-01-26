@@ -13,9 +13,6 @@ export default {
       transitionProperty: {
         height: "height",
       },
-      backgroundImage: {
-        reimagined: "url('assets/reimagined.png')",
-      },
     },
   },
   plugins: [],

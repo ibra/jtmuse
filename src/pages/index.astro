@@ -9,13 +9,13 @@ import Heading from "../components/Heading.astro";
 
 <Layout title="home">
   <div class="flex items-center justify-center h-screen">
-    <div class="flex items-center justify-center flex-col">
-      <Heading title="LGS JT presents" />
+    <div class="flex flex-col items-start">
+      <Heading title="LGS JT presents" styling="text-left mx-[5.4rem]" />
       <Image
         src={logo}
         alt="muse logo"
         loading="lazy"
-        class="mb-10 animate-stagger sm:max-w-5xl lg:max-w-3xl"
+        class="mb-10 animate-stagger sm:max-w-5xl lg:max-w-3xl ml-4"
       />
       <Navbar />
     </div>
