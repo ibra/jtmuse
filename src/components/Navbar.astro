@@ -1,4 +1,6 @@
 ---
+import { Debug } from "astro:components";
+
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1);
 ---
@@ -48,3 +50,5 @@ const currentPath = pathname.slice(1);
     @apply text-white;
   }
 </style>
+
+<Debug {currentPath} />
