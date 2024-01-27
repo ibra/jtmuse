@@ -8,7 +8,7 @@ interface Props {
 const { category } = Astro.props;
 ---
 
-<a href=`categories/${category}`>
+<a href=`/categories/${category}`>
   <Image
     src={import(`../assets/categories/${category}.jpg`)}
     alt={category}
