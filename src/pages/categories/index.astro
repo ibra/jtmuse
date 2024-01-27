@@ -1,0 +1,21 @@
+---
+import CategoryCard from "../../components/CategoryCard.astro";
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+import HeroButton from "../../components/HeroButton.astro";
+---
+
+<Layout title="categories">
+  <Navbar />
+  <div class="flex justify-center items-center">
+    <!-- music  -->
+    <div class="grid grid-cols-2 gap-x-5 gap-y-10 mb-10 mt-10">
+      <CategoryCard category="music" />
+      <CategoryCard category="drama" />
+      <CategoryCard category="literature" />
+      <CategoryCard category="media" />
+      <CategoryCard category="art" />
+      <CategoryCard category="misc" />
+    </div>
+  </div>
+</Layout>
