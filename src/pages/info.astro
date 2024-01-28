@@ -7,6 +7,7 @@ import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import logo from "../assets/muse_full.webp";
 import Heading from "../components/Heading.astro";
+import HeroButton from "../components/HeroButton.astro";
 ---
 
 <Layout title="info">
@@ -18,6 +19,9 @@ import Heading from "../components/Heading.astro";
       loading="lazy"
       class="mb-5 p-10 animate-stagger mx-auto max-w-2xl"
     />
+    <div class="flex items-center justify-center">
+      <HeroButton title="view event invite" href="/" styling="" />
+    </div>
     <TextualCard
       title="what is muse?"
       description=`Managed by the Arts Council of the senior A2
